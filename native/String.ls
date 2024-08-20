@@ -253,6 +253,8 @@
 
     map-chars = (string, fn) -> [ (fn character) for character in string / ''  ] * ''
 
+    string-from-code-point = (code-point) -> String.from-code-point code-point
+
     {
       char, trim,
       upper-case, lower-case,
@@ -274,5 +276,6 @@
       array-as-groups, groups-as-array,
       trimmed-is-empty,
       entity-encode, entity-decode,
-      map-chars
+      map-chars,
+      string-from-code-point
     }
