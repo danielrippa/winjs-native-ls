@@ -53,7 +53,7 @@
 
     #
 
-    dash-lower-upper = (, lower, upper) -> "#{ lower }-#{ if upper.length > 1 then upper else lcase upper }"
+    dash-lower-upper = (, lower, upper) -> "#{ lower }-#{ if upper.length > 1 then upper else lower-case upper }"
 
     dash-upper = (, upper) -> if upper.length > 1 then "#upper-" else lower-case upper
 
